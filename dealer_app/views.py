@@ -1,13 +1,19 @@
 from django.shortcuts import render
+from .models import Car
 
 def index(request):
-    return render(request, 'index.html')
+    cars = Car.objects.all()
+    for car in cars:
+        car.stars = range(car.rating)  # Prepare the range here
+    return render(request, 'index.html', {'cars': cars})
 
-def rent(request):            
-    return render(request, 'rent.html')
+def rent(request):
+    cars = Car.objects.all()            
+    return render(request, 'rent.html', {'cars': cars})
 
 def about(request):
-    return render(request, 'about.html')
+    cars = Car.objects.all()
+    return render(request, 'about.html', {'cars': cars})
 
 def contact(request):
     return render(request, 'contact.html')
