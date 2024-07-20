@@ -114,8 +114,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-ALLOWED_HOSTS = ['*']
-
-# ALLOWED_HOSTS = ['localhost', 'cisne-car.up.railway.app']
+ALLOWED_HOSTS = ['localhost', 'cisne-car.up.railway.app']
 
 CSRF_TRUSTED_ORIGINS = ['http://*','https://cisne-car.up.railway.app']
