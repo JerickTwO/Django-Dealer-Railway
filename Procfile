@@ -1,0 +1,1 @@
+web: gunicorn dealer_project.wsgi
