@@ -1,1 +1,1 @@
-web: gunicorn dealer_project.wsgi
+web: python manage.py collectstatic && gunicorn dealer_project.wsgi
