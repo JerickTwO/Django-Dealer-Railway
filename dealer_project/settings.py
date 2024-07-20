@@ -63,11 +63,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'dealer_project.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+print(dj_database_url.config(default=os.getenv('DATABASE_URL')))
 DATABASES = {
-    'default': dj_database_url.config(os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(default= os.getenv('DATABASE_URL'))
 }
 
 
