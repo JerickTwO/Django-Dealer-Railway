@@ -14,9 +14,6 @@ SECRET_KEY = 'django-insecure-5o2smt+-395j%mgc2t2=43#lipv!k!ya#)zu1op=&=t5#so&dg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -110,3 +107,5 @@ STATIC_URL = 'static/'
 STATIC_FILE_DIRS = 'dealer_app/static'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ALLOWED_HOSTS = ['*']
