@@ -1,0 +1,34 @@
+{% load static %}
+<nav class="navbar navbar-expand-xl align-items-xl-center align-items-start p-0 " style="margin-bottom: 60px;">
+
+    <div class="col-xl-3">
+        <a id="principal" class="navbar-brand" href="{% url 'index' %}"><img alt=""
+        src="{% static './images/logo.webp' %}"></a>
+    </div>
+    <div class="col-xl-9 text-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mynavbar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-start" id="mynavbar">
+            <ul class="navbar-nav mainmenu align-items-center m-0">
+                <li class="menu-item-has-children">
+                    <a href="{% url 'index' %}" class="active">Home</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'rent' %}">Cars</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'about' %}">About</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="{% url 'contact' %}">Contact</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="tel:5514510313" class="dark-btn">Call us now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>

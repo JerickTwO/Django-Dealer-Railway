@@ -1,0 +1,57 @@
+{% load static %}
+
+<footer class="footer pt-50">
+    <div class="container">
+        <div class="footer-logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static './images/logo.webp' %}" alt="" style="margin-bottom: 50px;">
+            </a>
+        </div>
+        <div class="detail-blog">
+            <div class="row align-items-xxl-end align-items-center">
+                <div class="col-xxl-5 col-xl-6">
+                    <div class="footer-detail" style="background: url('{% static './images/bg/footer-shape.webp' %}');
+                    93px 0 100px 96px;
+                    margin-left: -96px;
+                    width: 100%;
+                    background-position: top right;
+                    background-size: cover;
+                    background-repeat: no-repeat;">
+                        <div class="contact-detail">
+                            <a href=""> <i class="fal fa-phone-alt"></i> +1 551 451 0313</a>
+                            <a href=""> <i class="fal fa-map-marker-alt"></i>692 E 182nd St, Bronx, NY 10457</a>
+                        </div>
+                        <p class="light-text">Monday - Sunday: <b>07:00 AM - 10:00 PM</b></p>
+                        <ul class="social-link list-unstyled">
+                            <li><a href="https://www.instagram.com/cisne.car?igsh=cXo5dzJicTJ5YmNi&utm_source=qr"
+                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li>
+                                <a href="http://www.tiktok.com/@cisnecar5" target="_blank">
+                                    <svg width="35" height="42" viewBox="0 0 24 33" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <!-- TikTok Icon -->
+                                        <path
+                                            d="M12.185 2c0-.01 0-.016-.005-.021h-2.327v14.342a2.626 2.626 0 01-3.63 2.482 2.637 2.637 0 01-.617-.373 2.624 2.624 0 01-.738-2.94 2.634 2.634 0 012.442-1.724c.176 0 .346.018.512.048V10.57a6.935 6.935 0 00-1.075-.084A6.985 6.985 0 000 17.463a6.987 6.987 0 0013.973 0V7.68c1.276 1.007 2.874 1.61 4.6 1.61.014 0 .025-.004.039-.005V6.97c-.012.001-.023.006-.039.006-1.714 0-3.313-.602-4.591-1.607V2h-.007c-.65 0-1.18-.53-1.18-1.185V.18c0-.649.53-1.18 1.18-1.18h3.36c.649 0 1.18.53 1.18 1.18v.637c0 .655.53 1.185 1.18 1.185.649 0 1.18-.53 1.18-1.185V.18C24 .529 23.47 0 22.82 0h-3.36c-.649 0-1.18.53-1.18 1.18v3.85c-.01 0-.02.004-.031.004-1.641 0-3.191-.603-4.408-1.604a8.027 8.027 0 01-1.656 1.156 6.893 6.893 0 00-1.656-.156zm1.23 8.978a6.935 6.935 0 011.09.086V10.57a6.936 6.936 0 00-1.09-.092c-.325 0-.643.02-.957.058v4.512a2.626 2.626 0 011.64-.47c.442 0 .865.075 1.255.203v-5.02c-.167.023-.335.03-.505.03-.014 0-.023.003-.037.005-.295.03-.588.09-.88.178-.292.087-.578.2-.85.344zM12.189 12.22c-.365 0-.73.067-1.094.185v6.504a6.987 6.987 0 002.133-.355V12.22z"
+                                            fill="currentColor" />
+                                        <!-- TIK TOK Text -->
+                                        <text x="50%" y="33" text-anchor="middle" fill="currentColor" font-size="5"
+                                            font-family="Arial, sans-serif">TIK TOK</text>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="copuright-text">
+                            <p>©2024 All rights are reserved by <a href="">Jhonatan Correa</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-7 col-xl-6">
+                    <div class="showcase-img d-xl-block d-none">
+                        <img src="{% static './images/bg/car-image-2.png'%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -109,3 +109,4 @@ STATIC_FILE_DIRS = 'dealer_app/static'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', 'cisne-car.up.railway.app']

@@ -1,11 +1,454 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Discover the best car dealership for buying and selling quality vehicles. We offer top-notch service and a wide selection of cars to choose from.">
+    <title>Best Vehicle Dealership - Buy and Sell Cars</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="{% static 'css/app.css' %}" />
+
+
 </head>
+
 <body>
-    <h1>gola</h1>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="wheel" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 254.532 254.532" xml:space="preserve">
+                <g>
+                    <path id="tire" d="M127.267,0C57.092,0,0,57.091,0,127.266s57.092,127.266,127.267,127.266c70.174,0,127.266-57.091,127.266-127.266
+                        S197.44,0,127.267,0z M127.267,217.656c-49.922,0-90.391-40.468-90.391-90.39s40.469-90.39,90.391-90.39
+                        c49.92,0,90.39,40.468,90.39,90.39S177.186,217.656,127.267,217.656z"></path>
+                    <path id="rim"
+                        d="M127.267,48.578c-43.39,0-78.689,35.299-78.689,78.688c0,43.389,35.3,78.688,78.689,78.688
+                        c43.389,0,78.688-35.299,78.688-78.688C205.955,83.877,170.655,48.578,127.267,48.578z M195.878,122.249h-38.18
+                        c-0.78-4.825-2.686-9.275-5.435-13.079l26.954-26.954C188.679,93.112,194.771,106.996,195.878,122.249z M132.204,58.648
+                        c15.244,1.087,29.123,7.156,40.025,16.591l-26.948,26.949c-3.804-2.748-8.253-4.653-13.077-5.433V58.648z M122.329,58.648v38.106
+                        c-4.824,0.78-9.274,2.685-13.078,5.434L82.302,75.24C93.204,65.805,107.085,59.735,122.329,58.648z M75.313,82.217l26.955,26.954
+                        c-2.749,3.803-4.654,8.253-5.434,13.077h-38.18C59.761,106.996,65.853,93.113,75.313,82.217z M58.643,132.123h38.192
+                        c0.779,4.824,2.685,9.274,5.434,13.078l-27.029,27.029C65.788,161.308,59.714,147.398,58.643,132.123z M122.329,195.884
+                        c-15.285-1.09-29.197-7.188-40.113-16.666l27.035-27.035c3.804,2.749,8.254,4.654,13.078,5.434V195.884z M122.329,147.459v0.072
+                        c-2.131-0.518-4.131-1.36-5.953-2.474l0.047-0.047c-2.85-1.738-5.244-4.132-6.982-6.983l-0.046,0.046
+                        c-1.114-1.822-1.956-3.821-2.474-5.952h0.071c-0.385-1.585-0.611-3.233-0.611-4.937c0-1.704,0.227-3.352,0.611-4.937h-0.071
+                        c0.518-2.13,1.359-4.129,2.474-5.951l0.046,0.046c1.738-2.85,4.133-5.245,6.982-6.982l-0.047-0.047
+                        c1.822-1.114,3.822-1.957,5.953-2.474v0.072c1.586-0.385,3.233-0.612,4.938-0.612s3.352,0.227,4.938,0.612v-0.072
+                        c2.131,0.518,4.13,1.359,5.951,2.473l-0.047,0.047c2.851,1.737,5.245,4.132,6.983,6.982l0.046-0.046
+                        c1.115,1.822,1.957,3.822,2.475,5.953h-0.071c0.385,1.585,0.611,3.233,0.611,4.937c0,1.704-0.227,3.352-0.611,4.937h0.071
+                        c-0.518,2.131-1.359,4.131-2.475,5.953l-0.046-0.046c-1.738,2.85-4.133,5.244-6.983,6.982l0.047,0.046
+                        c-1.821,1.114-3.82,1.956-5.951,2.474v-0.072c-1.586,0.385-3.233,0.612-4.938,0.612S123.915,147.845,122.329,147.459z
+                        M132.204,195.884v-38.267c4.824-0.78,9.273-2.685,13.077-5.433l27.034,27.034C161.4,188.696,147.488,194.794,132.204,195.884z
+                        M179.292,172.23l-27.028-27.028c2.749-3.804,4.654-8.254,5.435-13.079h38.191C194.818,147.398,188.745,161.308,179.292,172.23z">
+                    </path>
+                </g>
+            </svg>
+            <div class="road"></div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Main Wrapper Start -->
+    <div id="main-wrapper" class="main-wrapper overflow-hidden">
+
+        <!-- Header Area Start -->
+        <header class="header">
+            <div class="container">
+                {%include 'includes/navbar.html'%}
+            </div>
+        </header>
+        <!-- Header Area end -->
+
+        <!-- Banner Area start -->
+        <section class="banner" 
+        style='
+        background: url("{% static "images/bg/banner-bg-min.webp" %}");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1300px;
+        '>
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="fs-76">Buy and Sell Cars <br> <b>Best Vehicle Dealership</b></h1>
+                    <p>
+                    <p>Experience exceptional service and find the perfect vehicle for you at Drivelux,<br>your trusted
+                        partner in buying and selling cars.</p>
+                    </p>
+                    <div class="btn-block">
+                        <a href="./rent/" class="dark-btn">Explore Cars</a>
+                        <div class="d-lg-block d-none">
+                            <a href="tel:5514510313" class="dark-btn ">Call Us Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content text-lg-end text-center">
+                    <div class="text-lg-start text-center">
+                        <h4 class="fs-57">(551) 451 0313</h4>
+                        <p class="light-text">&emsp; 92 E 182nd St, Bronx, NY 10457</p>
+                    </div>
+                    <a href="tel:5514510313" class="dark-btn">Call Us</a>
+                </div>
+                <div class="ferrary-image">
+
+                    <img src="{% static './images/bg/car-image.png' %}" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Banner Area end -->
+
+        <!-- logo Area start -->
+        <div class="logo position-relative">
+            <img src="{% static './images/arrow-line-min.jpg' %}" class="position-absolute top-0 start-0" alt="">
+            <div class="container pt-1">
+                <div class="logo-slider pt-100">
+                    <div class="item">
+                        <img src="{% static './images/icon/ferrari-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/bmw-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/bentley-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/paartner-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/mclaren-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/chevrolet-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/ferrari-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/bmw-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/bentley-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/paartner-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/mclaren-logo.png' %}" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{% static './images/icon/chevrolet-logo.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logo Area end -->
+
+        <!-- Carousel start -->
+        <section class="top-list pt-50 pb-26">
+            <div class="container">
+                <div class="heading text-end right">
+                    <p id="colores">Find Your Ideal Ride, Discover the Perfect <br> Car to Suit Your Style and Adventure
+                    </p>
+                    <h2>Pick Your Luxury Drive</h2>
+                </div>
+                <div class="card-slider">
+
+                </div>
+            </div>
+        </section>
+        <!-- Carousel end -->
+
+        <!-- book Area end -->
+        <section class="book pt-50 pb-50">
+            <div class="container">
+                <div class="heading left">
+                    <h2>How To Book A Car</h2>
+                    <p id="colores">Effortless Booking Process, Get Behind the <br> Wheel of Your Dream Car in Minutes<a
+                            href="tel:5514510313" class="dark-btn" id="boton-medio">Call Us</a></p>
+                </div>
+            </div>
+            <div class="book-area-sec">
+                <div class="container  ">
+                    <div class="book-area">
+                        <div class="area-block">
+                            <h5>Step 01:</h5>
+                            <a href="#">Choose Your Ride</a>
+                        </div>
+                        <div class="area-block st-2">
+                            <img src="{% static './images/arrow-shape.webp'%}" alt="">
+                            <h5>Step 02:</h5>
+                            <a href="#">Fill Up The Form</a>
+                        </div>
+                        <div class="area-block st-2">
+                            <img src="{% static './images/arrow-shape.webp'%}" alt="">
+                            <h5>Step 03:</h5>
+                            <a href="#">Pick Your Ride</a>
+                        </div>
+                        <div class="area-block p-0 car-block">
+                            <img src="{% static './images/car-image/carrito.webp'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- book Area end -->
+
+
+
+        <!-- Carousel start -->
+        <section class="top-list pt-50 pb-26">
+            <div class="container">
+                <div class="heading text-end right">
+                    <p id="colores">Find Your Ideal Ride, Discover the Perfect <br> Car to Suit Your Style and Adventure
+                    </p>
+                    <h2>Pick Your Luxury Drive</h2>
+                </div>
+                <div class="card-slider">
+
+                </div>
+            </div>
+        </section>
+        <!-- Carousel end -->
+
+        <!-- Categories Area end -->
+        <section class="categories  pt-50 pb-26">
+            <div class="container">
+                <div class="heading left">
+                    <h2>Vehicle Categories</h2>
+                    <p>Discover our Vehicle Categories, Find the <br> Perfect Fit for Your Travel Needs</p>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-6 mb-24">
+                        <div class="categorie-block">
+                            <div class="screw-image">
+                                <img src="{% static './images/car-image/car-image-7.png' %}" alt="">
+                                <a href="./rent/">SUV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 mb-24">
+                        <div class="categorie-block">
+                            <div class="screw-image">
+                                <img src="{% static './images/car-image/car-image-9.png' %}" alt="">
+                                <a href="./rent/">Sedan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6 offset-xxl-0 offset-xl-3 mb-24">
+                        <div class="categorie-block">
+                            <div class="screw-image st-2">
+                                <img src="{% static './images/car-image/car-image-8.png' %}" alt="">
+                                <a href="./rent/">Sports</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories Area end -->
+
+        <!-- choose Area start -->
+        <section class="choose pt-50 pb-26">
+            <div class="container">
+                <div class="heading text-end right">
+                    <p>Discover the DriveLux Advantage: Unparalleled <br> Service & Unforgettable Experiences Await</p>
+                    <h2>Why Choose Us</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-6 col-md-6">
+                        <div class="choose-block mb-24">
+                            <div class="icon">
+                                <img src="{% static './images/icon/sports-car-icon.png'%}" alt="">
+                            </div>
+                            <h4>Extensive Selection of Luxury Cars</h4>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6">
+                        <div class="choose-block mb-24">
+                            <div class="icon">
+                                <img src="{% static './images/icon/vacuum-icon.png'%}" alt="">
+                            </div>
+                            <h4>Well-Maintained & Clean Cars</h4>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6">
+                        <div class="choose-block mb-24">
+                            <div class="icon">
+                                <img src="{% static './images/icon/booking-icon.png'%}" alt="">
+                            </div>
+                            <h4>Easy and Intuitive Booking Process</h4>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-6 col-md-6">
+                        <div class="choose-block mb-24">
+                            <div class="icon">
+                                <img src="{% static './images/icon/service-icon.png'%}" alt="">
+                            </div>
+                            <h4>Extensive Selection of Luxury Cars</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- choose Area end -->
+
+        <!-- newsletter Area start -->
+        <section class="newsletter ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-6 mb-lg-0 mb-4">
+                        <div class="detail">
+                            <a href="tel:5514510313"> <i class="fal fa-phone-alt"></i> +1 551 451 0313</a>
+                            <h4>Call us</h4>
+                            <p>We are always here to help you.</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-5 col-lg-6">
+                        <div class="register-block text-center">
+                            <h5>Get Latest Updates in your Mail Box</h5>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" required
+                                        placeholder="Email">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="dark-btn">Register Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- newsletter Area end -->
+
+        <!-- review Area start -->
+        <section class="review p-50 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-6 col-lg-8 mb-xxl-0 mb-4">
+                        <div class="heading left st-2">
+                            <h2>Customer Reviews</h2>
+                            <p>Don’t just take our word for it. Hear What <br> our clients say about their experience
+                            </p>
+                        </div>
+                        <div class="review-slider-nav">
+                            <div class="item">
+                                <img src="{% static './images/review/small-img-4.png'%}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static './images/review/small-img-3.png'%}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static './images/review/small-img-2.png'%}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static './images/review/small-img-1.png'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-8 col-12">
+                        <div class="review-slider">
+                            <div class="item">
+                                <div class="review-block">
+                                    <div class="review-detail">
+                                        <h5>Charlotte</h5>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                        <p>Renting a car from DriveLux was an exceptional experience. The customer
+                                            service
+                                            was topnotch, & the car I selected exceeded all expectations. Smooth
+                                            handling,
+                                            luxurious interiors, and an unforgettable ride. I highly recommend DriveLux
+                                            for
+                                            anyone seeking a remarkable car rental experience.</p>
+                                    </div>
+                                </div>
+                                <img src="{% static './images/review/large-img-4.png'%}" alt="">
+                            </div>
+                            <div class="item">
+                                <div class="review-block">
+                                    <div class="review-detail">
+                                        <h5>Harry</h5>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                        <p>Renting a car from DriveLux was an exceptional experience. The customer
+                                            service
+                                            was topnotch, & the car I selected exceeded all expectations. Smooth
+                                            handling,
+                                            luxurious interiors, and an unforgettable ride. I highly recommend DriveLux
+                                            for
+                                            anyone seeking a remarkable car rental experience.</p>
+                                    </div>
+                                </div>
+                                <img src="{% static './images/review/large-img-3.png'%}" alt="">
+                            </div>
+                            <div class="item">
+                                <div class="review-block">
+                                    <div class="review-detail">
+                                        <h5>Benjamin</h5>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                        <p>Renting a car from DriveLux was an exceptional experience. The customer
+                                            service
+                                            was topnotch, & the car I selected exceeded all expectations. Smooth
+                                            handling,
+                                            luxurious interiors, and an unforgettable ride. I highly recommend DriveLux
+                                            for
+                                            anyone seeking a remarkable car rental experience.</p>
+                                    </div>
+                                </div>
+                                <img src="{% static './images/review/large-img-2.png'%}" alt="">
+                            </div>
+                            <div class="item">
+                                <div class="review-block">
+                                    <div class="review-detail">
+                                        <h5>Samantha James</h5>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                        <p>Renting a car from DriveLux was an exceptional experience. The customer
+                                            service
+                                            was topnotch, & the car I selected exceeded all expectations. Smooth
+                                            handling,
+                                            luxurious interiors, and an unforgettable ride. I highly recommend DriveLux
+                                            for
+                                            anyone seeking a remarkable car rental experience.</p>
+                                    </div>
+                                </div>
+                                <img src="{% static './images/review/large-img-1.png'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- review Area end -->
+
+        {% include 'includes/footer.html'%}
+    </div>
+    <script src="{% static 'js/app.js' %}"></script>
 </body>
+
 </html>

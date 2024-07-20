@@ -1,0 +1,36 @@
+{% load static %}
+{% for car in cars %}
+<div class="item-list">
+    <img src="{{ car.image.url }}" alt="{{ car.make }}">
+    <div class="detail-block">
+        <div class="detail">
+            <h5>{{ car.make }}</h5>
+            <p><b>${{ car.price }}</b></p>
+        </div>
+        <div class="detail">
+            <p>Seating Capacity</p>
+            <p>{{ car.seating_capacity }} Person</p>
+        </div>
+        <div class="detail">
+            <p>Transmission</p>
+            <p>{{ car.get_transmission_display }}</p> <!-- Asegura mostrar la versión legible de la transmisión -->
+        </div>
+        <div class="detail">
+            <p>Model</p>
+            <p>{{ car.year }}</p>
+        </div>
+        <div class="detail">
+            <p>Miles</p>
+            <p>{{ car.miles }} K</p>
+        </div>
+        <div class="detail">
+            <p>Rating</p>
+            <p>
+                {% for star in car.stars %}
+                ★
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}
