@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
     <!-- All CSS files -->
-    <link rel="stylesheet" href="{% static './css/app.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/app.css' %}" />
 
 
 </head>
@@ -128,7 +128,7 @@
                     <h2>Pick Your Luxury Drive</h2>
                 </div>
                 <div class="card-slider">
-                    
+                    {%include 'includes/carousel.html'%}
                 </div>
             </div>
         </section>
@@ -180,7 +180,7 @@
                     <h2>Pick Your Luxury Drive</h2>
                 </div>
                 <div class="card-slider">
-                    
+                    {%include 'includes/carousel.html'%}
                 </div>
             </div>
         </section>
