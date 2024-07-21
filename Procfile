@@ -1,1 +1,1 @@
-web: python manage.py migrate && python manage.py collectstatic && gunicorn dealer_project.wsgi:application --log-file -
+web: python manage.py collectstatic && gunicorn dealer_project.wsgi:application --log-file -
